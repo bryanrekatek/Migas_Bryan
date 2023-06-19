@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\BukuController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
@@ -17,3 +18,9 @@ use Illuminate\Support\Facades\Route;
 Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
+// route api for buku
+Route::get('/buku', [BukuController::class, 'index']);
+Route::post('/buku', [BukuController::class, 'store']);
+Route::get('/buku/{id}', [BukuController::class, 'show']);
+Route::put('/buku/{id}', [BukuController::class, 'update']);
+Route::delete('/buku/{id}', [BukuController::class, 'destroy']);

@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\BukuController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\SaranaPrasarananController;
 use Illuminate\Support\Facades\Route;
@@ -21,3 +22,8 @@ Route::get('/', function () {
 
 Route::get('/profile', [ProfileController::class, 'index']);
 Route::resource('sarana_prasarana', SaranaPrasarananController::class);
+
+// create route form for buku
+Route::get('/buku', [BukuController::class, 'formIndex'])->name('buku.index');
+Route::get('/buku/create', [BukuController::class, 'formCreate'])->name('buku.create');
+Route::get('/buku/edit/{id}', [BukuController::class, 'formEdit'])->name('buku.edit');

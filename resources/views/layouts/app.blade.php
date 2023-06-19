@@ -3,6 +3,7 @@
 <head>
     <title>Migas Bryan App</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.0-beta1/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 <body>
     <main>
@@ -12,6 +13,7 @@
             </div>
         </nav>
         @yield('content')
+        @yield('scripts')
     </main>
 </body>
 </html>
