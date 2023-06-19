@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\ProfileController;
+use App\Http\Controllers\SaranaPrasarananController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -19,3 +20,4 @@ Route::get('/', function () {
 });
 
 Route::get('/profile', [ProfileController::class, 'index']);
+Route::resource('sarana_prasarana', SaranaPrasarananController::class);
