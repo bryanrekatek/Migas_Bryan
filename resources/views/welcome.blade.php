@@ -41,7 +41,7 @@
                 @csrf
                 <div class="login-form-head">
                     <h4>Sign In</h4>
-                    <p>Hello there, Sign in and start managing your Admin Template</p>
+{{--                    <p>Hello there, Sign in and start managing your Admin Template</p>--}}
                 </div>
                 <div class="login-form-body">
                     <div class="form-gp">

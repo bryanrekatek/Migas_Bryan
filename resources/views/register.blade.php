@@ -41,7 +41,7 @@
                 @csrf
                 <div class="login-form-head">
                     <h4>Sign up</h4>
-                    <p>Hello there, Sign up and Join with Us</p>
+{{--                    <p>Hello there, Sign up and Join with Us</p>--}}
                 </div>
                 <div class="login-form-body">
                     <div class="form-gp">
