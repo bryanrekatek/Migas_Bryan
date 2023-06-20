@@ -25,3 +25,7 @@ Auth::routes();
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
 Route::get('/profile', [\App\Http\Controllers\UserController::class, 'profile'])->name('profile');
+
+Route::get('/sarana', [\App\Http\Controllers\SaranaController::class, 'index'])->name('sarana');
+
+Route::get('/buku', [\App\Http\Controllers\BukuController::class, 'index'])->name('buku');
